@@ -71,6 +71,7 @@ d3.csv("data/temperature-anomaly-data.csv")
       .attr("width", xScale.bandwidth())
       .attr("height", height - margin.top - margin.bottom)
       .attr("fill", (d) => colorScale(d.avg));
+      .style("text-anchor", "middle")
 
     // legend
     legendRects = svg
